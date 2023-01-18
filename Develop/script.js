@@ -1,9 +1,9 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
-var upperCase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
-var lowerCase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
-var numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
-var special = ["!", "%", "&", ",", "*", "+", "-", ".", "/", "?"]
+var UpperCase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+var LowerCase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+var Numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
+var Special = ["!", "%", "&", ",", "*", "+", "-", ".", "/", "?"]
 
   var length = "";
   var upperCase;
@@ -35,20 +35,20 @@ function generatePassword() {
 
     var passwordText = []
 
-    if(upperCase) {
-      passwordText = passwordText.concat(upperCase)
+    if(UpperCase) {
+      passwordText = passwordText.concat(UpperCase)
     }
 
-    if(lowerCase) {
-      passwordText = passwordText.concat(lowerCase)
+    if(LowerCase) {
+      passwordText = passwordText.concat(LowerCase)
     }
 
-    if(numbers) {
-      passwordText = passwordText.concat(numbers)
+    if(Numbers) {
+      passwordText = passwordText.concat(Numbers)
     }
 
-    if(special) {
-      passwordText = passwordText.concat(special)
+    if(Special) {
+      passwordText = passwordText.concat(Special)
     }
 
     console.log(passwordText)
@@ -56,7 +56,7 @@ function generatePassword() {
     var random =""
 
     for (var i = 0; i < length; i++) {
-      random = random + passwordText[Math.floor(math.random() * passwordText.length)]
+      random = random + passwordText[Math.floor(Math.random() * passwordText.length)]
     console.log(random)
     }
     return random;
