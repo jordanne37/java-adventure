@@ -5,6 +5,11 @@ var lowerCase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m"
 var numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 var special = ["!", "%", "&", ",", "*", "+", "-", ".", "/", "?"]
 
+  var length = "";
+  var upperCase;
+  var lowerCase;
+  var numbers;
+  var special;
 
 
 function generatePassword() {
@@ -28,6 +33,33 @@ function generatePassword() {
       var special = confirm("Click OK if you want special characters in your password");
     }
 
+    var passwordText = []
+
+    if(upperCase) {
+      passwordText = passwordText.concat(upperCase)
+    }
+
+    if(lowerCase) {
+      passwordText = passwordText.concat(lowerCase)
+    }
+
+    if(numbers) {
+      passwordText = passwordText.concat(numbers)
+    }
+
+    if(special) {
+      passwordText = passwordText.concat(special)
+    }
+
+    console.log(passwordText)
+
+    var random =""
+
+    for (var i = 0; i < length; i++) {
+      random = random + passwordText[Math.floor(math.random() * passwordText.length)]
+    console.log(random)
+    }
+    return random;
 
   }
 // Write password to the #password input
