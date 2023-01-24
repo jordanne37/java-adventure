@@ -14,8 +14,7 @@ AFTER THAT IT ASK IF THEY WOULD LIKE UPPER CASE LETTERS, LOWERCASE LETTERS, NUMB
 THEY MUST CHOOSE ATLEAST ONE OR A MESSAGE OF INVALID WILL POP UP. ONCE EVERY PARAMETER IS MET THEN IT WILL GENERATE A RADNOM PASSWORD FOR THE USER. 
 
 
-Screenshot 2023-01-17 223006.jpg
+![screen shot of my application](passwordgenerate.jpg)
 
-file:///C:/Users/jbeth/Desktop/Bootcamp/My%20Projects/java-adventure/index.html
 
 https://jordanne37.github.io/java-adventure/

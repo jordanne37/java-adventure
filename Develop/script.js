@@ -27,27 +27,27 @@ function generatePassword() {
 
     while(upperCase === false && lowerCase === false && special ===false && numbers === false) {
       alert("INVALID");
-      var upperCase = confirm("Click OK if you want upper case letters in your password");
-      var lowerCase = confirm("Click OK if you want lower case letters in your password");
-      var numbers = confirm("Click OK if you want numbers in your password");
-      var special = confirm("Click OK if you want special characters in your password");
+      upperCase = confirm("Click OK if you want upper case letters in your password");
+      lowerCase = confirm("Click OK if you want lower case letters in your password");
+      numbers = confirm("Click OK if you want numbers in your password");
+      special = confirm("Click OK if you want special characters in your password");
     }
 
     var passwordText = []
 
-    if(UpperCase) {
+    if(upperCase) {
       passwordText = passwordText.concat(UpperCase)
     }
 
-    if(LowerCase) {
+    if(lowerCase) {
       passwordText = passwordText.concat(LowerCase)
     }
 
-    if(Numbers) {
+    if(numbers) {
       passwordText = passwordText.concat(Numbers)
     }
 
-    if(Special) {
+    if(special) {
       passwordText = passwordText.concat(Special)
     }
 
